@@ -1,0 +1,21 @@
+{
+    "name": "Summer", 
+    "description": "A convenient summarization tool for your browsing sessions bring to you by the Summer team.", 
+    "version": "1.0",
+    "manifest_version": 3, 
+    "action": {
+        "default_popup": "/stable/popup.html", 
+        "default_icon": {
+            "16": "/resource/icon_16.png", 
+            "32": "/resource/icon_32.png", 
+            "48": "/resource/icon_48.png", 
+            "128": "/resource/icon_128.png"
+        }
+    },
+    "icons": {
+        "16": "/resource/icon_16.png", 
+        "32": "/resource/icon_32.png", 
+        "48": "/resource/icon_48.png", 
+        "128": "/resource/icon_128.png"
+    }
+}

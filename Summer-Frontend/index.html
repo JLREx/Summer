@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icon_32.png" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=PT+Sans"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- roboto font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <h1>SUMMER</h1>
+      <hr class="header-line" />
+    </div>
+
+    <div id="input-area">
+      <div>
+        <textarea
+          name=""
+          id="input-text"
+          cols="30"
+          rows="10"
+          x-webkit-speech
+        ></textarea>
+      </div>
+      <div>
+        <button id="summarise" type="button">SUMMARISE</button>
+        <input
+          class="speech-to-text"
+          type="image"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAACS0lEQVRYhe2Wz0tUURTHP+e+sVWJIG4SinB8QrvoF23b5Q/6Cwopp4KYRW4KIjNrYUFuAhdvhLQWbVuobRJpFWRGq9CZQiisoFqILWxi5tti3pAMNvOeIgn6Xd17zrnnfu659717YbvL4g5IZdWJcQVxHBDGKxNDgW8Tmw7Qk9Udg+tr+QS3R3zriwvgogamsuoMJ88bXC0UaS4Uaca4Ftpu9MyrPS5AInKk6MUAoy9otXurPHdTOYEYxOgFJuMARK4AxlEA+82jSlddgrFSCMfiTB4PAHYDBAftS6Vj+IB9DZt7NhNgU7QDsAOwdQFSWSmVldabOOr4ahX4CXBuTuVvezns760MvDSv5rC5BJDOqX71mPUBGJ8BPEdL2J8B8DzOVIYWXckmeA3wC5Kha7EWQLW74AXgG3QBb00MCU4iBlI5USjwuAwkcQvAxH2AInTZ3xxV9c8KmPEkXFU6nVN94NuE4DawCzHoORY9xyJiMLQNZNrsWfeCGhDpUpJSjnUBBEmbRkwDTStitF9yI771SXQIpijt77JgCtGeabOb/ZKryzNq0Ag8z7RazQpUfZCcf6f9lmDWoBHjqTm6gxZbWiu2e0ENdXlGMU4LfhQchx4m7dOGAAAuzulI0TEJNAHfMR4YjCfyZFc8zCXwEZ2IdLjyb3KcGknabK3ckQAALnzQPhUYBjpqhI6bx+WgxT5GyRsZoKye9zpMkbMGJ6D0QAFmBC+dMRa02ps4+Takjf4py9q6d8G2AYh8CKPud8a3WAf7v1dgR38A2hvGrH+BEQMAAAAASUVORK5CYII="
+          name=""
+          id="mic"
+        />
+        <span id="word-count">0/350</span>
+
+        <!-- <div class=""> -->
+        <span id="alert-icon">
+          <label for="file-input">
+            <i class="material-icons md-36">upload_file</i>
+          </label>
+        </span>
+        <div id="alert">Drop your files here for file input</div>
+
+        <!-- <input
+            onclick="uploadFiles()"
+            id="file-input"
+            type="file"
+            accept=".docx,.pdf,.jpg,.jpeg,.png"
+            name="file-input"
+          /> -->
+        <!-- </div> -->
+
+        <input type="image" src="audio.png" name="" id="text-to-speech-left" />
+      </div>
+    </div>
+
+    <div id="output-area">
+      <div>
+        <textarea
+          name=""
+          id="output-text"
+          cols="30"
+          rows="10"
+          readonly
+        ></textarea>
+      </div>
+      <div class="dropdown" id="list">
+        <button id="lang" class="language" value="en-US">ENGLISH</button>
+        <div id="myDropdown" class="dropdown-content">
+          <div class="option" id="chi" value="zh-CN">CHINESE</div>
+          <div class="option" id="eng" value="en-US">ENGLISH</div>
+          <div class="option" id="fre" value="fr-FR">FRENCH</div>
+          <div class="option" id="ger" value="de-DE">GERMAN</div>
+          <div class="option" id="ita" value="it-IT">ITALIAN</div>
+          <div class="option" id="mal" value="id-ID">MALAY</div>
+          <div class="option" id="spa" value="es-ES">SPANISH</div>
+        </div>
+      </div>
+
+      <input type="image" src="audio.png" name="" id="text-to-speech-right" />
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
